@@ -6,7 +6,7 @@ export const placeOrder=(subtotal,codeClient,rS,modalitePai,dateCmd) =>async (di
     const currentUser = getState().loginUserReducer.currentUser;
     const cartItems = getState().cartReducer.cartItems;
 try{
-    const response = await axios.post('http://localhost:5000/api/orders/placeorder',{subtotal ,currentUser, cartItems,codeClient,rS,modalitePai,dateCmd})
+    const response = await axios.post('https://topclassapi2b-1.onrender.com/api/orders/placeorder',{subtotal ,currentUser, cartItems,codeClient,rS,modalitePai,dateCmd})
     console.log(response);
     dispatch({type:'PLACE_ORDER_SUCCESS'})
 
@@ -23,7 +23,7 @@ export const getUserOrders = () => async (dispatch, getState) => {
     dispatch({ type: 'GET_USER_ORDERS_REQUEST' });
 
     try {
-        const response = await axios.post('http://localhost:5000/api/orders/getuserorders', { currentUser });
+        const response = await axios.post('https://topclassapi2b-1.onrender.com/api/orders/getuserorders', { currentUser });
         dispatch({ type: 'GET_USER_ORDERS_SUCCESS', payload: response.data });
     } catch (error) {
         dispatch({ 
