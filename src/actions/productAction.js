@@ -6,7 +6,7 @@ export const getAllProducts = () => async dispatch => {
     dispatch({ type: 'GET_PRODUCTS_REQUEST' });
 
     try {
-        const response = await axios.get('http://localhost:5000/api/products/getallproducts');
+        const response = await axios.get('https://topclassapi2b-1.onrender.com/api/products/getallproducts');
         dispatch({ type: 'GET_PRODUCTS_SUCCESS', payload: response.data });
     } catch (error) {
         dispatch({ 
