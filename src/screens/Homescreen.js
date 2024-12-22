@@ -164,7 +164,7 @@ export default function Homescreen() {
             </div>
           ))
         )}
-            {/*
+            
        <footer className="menubar-area footer-fixed bg-light mt-1">
       <div className="toolbar-inner menubar-nav d-flex justify-content-around">
       <a href="/orders" className="nav-link">
@@ -181,7 +181,7 @@ export default function Homescreen() {
           <span>Panier</span>
         </a>
       </div>
-    </footer>  */} 
+    </footer>  
       </div>
      
     </div>
