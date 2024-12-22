@@ -386,7 +386,7 @@ const CartDetailsScreen = () => {
         All commandes en &nbsp;
         <i className="fa fa-file-pdf-o"></i>
     </button>*/}
-{/*
+
      <footer className="menubar-area footer-fixed bg-light mt-1 shadow-lg" >
       <div className="toolbar-inner menubar-nav d-flex justify-content-around">
    
@@ -404,7 +404,7 @@ const CartDetailsScreen = () => {
           <span>Panier</span>
         </a>
       </div>
-    </footer>  */}
+    </footer>  
     </div>
   );
 };
