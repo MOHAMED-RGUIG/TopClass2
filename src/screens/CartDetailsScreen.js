@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import Loading from '../components/Loading';
 import Error from '../components/Error';
 import { getUserOrders } from '../actions/orderActions';
+import { Link } from 'react-router-dom';
 
 const formatDate = (date) => {
   const d = new Date(date);
@@ -387,24 +388,22 @@ const CartDetailsScreen = () => {
         <i className="fa fa-file-pdf-o"></i>
     </button>*/}
 
-     <footer className="menubar-area footer-fixed bg-light mt-1 shadow-lg" >
+     <footer className="menubar-area footer-fixed bg-light mt-1">
       <div className="toolbar-inner menubar-nav d-flex justify-content-around">
-   
-
-        <a href="/orders" className="nav-link">
-          <i className="bi bi-grid  row  justify-content-center m-3"></i>
+        <Link to="/orders" className="nav-link">
+          <i className="bi bi-grid row justify-content-center m-3"></i>
           <span>Commandes</span>
-        </a>
-        <a href="/homescreen" className="nav-link active">
-          <i className="bi bi-house-door row   justify-content-center m-3" ></i>
-          <span >Acceuil</span>
-        </a>
-        <a href="/cart" className="nav-link">
-          <i className="bi bi-bag-check  row  justify-content-center m-3"></i>
+        </Link>
+        <Link to="/homescreen" className="nav-link active">
+          <i className="bi bi-house-door row justify-content-center m-3"></i>
+          <span>Accueil</span>
+        </Link>
+        <Link to="/cart" className="nav-link">
+          <i className="bi bi-heart row justify-content-center m-3"></i>
           <span>Panier</span>
-        </a>
+        </Link>
       </div>
-    </footer>  
+    </footer>
     </div>
   );
 };
