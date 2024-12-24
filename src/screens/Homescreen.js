@@ -8,6 +8,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import feather from 'feather-icons';
 
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -167,21 +169,20 @@ export default function Homescreen() {
             
        <footer className="menubar-area footer-fixed bg-light mt-1">
       <div className="toolbar-inner menubar-nav d-flex justify-content-around">
-      <a href="/orders" className="nav-link">
-          <i className="bi bi-grid  row  justify-content-center m-3"></i>
+        <Link to="/orders" className="nav-link">
+          <i className="bi bi-grid row justify-content-center m-3"></i>
           <span>Commandes</span>
-        </a>
-        <a href="/homescreen" className="nav-link active">
-          <i className="bi bi-house-door row justify-content-center m-3" ></i>
-          <span >Acceuil</span>
-        </a>
-     
-        <a href="/cart" className="nav-link">
-          <i className="bi bi-heart   row   justify-content-center m-3"></i>
+        </Link>
+        <Link to="/homescreen" className="nav-link active">
+          <i className="bi bi-house-door row justify-content-center m-3"></i>
+          <span>Accueil</span>
+        </Link>
+        <Link to="/cart" className="nav-link">
+          <i className="bi bi-heart row justify-content-center m-3"></i>
           <span>Panier</span>
-        </a>
+        </Link>
       </div>
-    </footer>  
+    </footer>
       </div>
      
     </div>
